@@ -1,16 +1,17 @@
 import React from "react"
 import Link from "next/link"
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAddressCard, faFile, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faFile, faChevronRight, faCode } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-library.add(faAddressCard, faFile, faChevronRight)
+library.add(faAddressCard, faFile, faChevronRight, faCode)
 
 const Navbar = () => {
     return (
       <div>
         <nav className="navbar">
           <ul className="navbar-nav">
+
             <li className="nav-name">
                 <Link href="/home">
                     <a className="nav-link">
@@ -19,6 +20,7 @@ const Navbar = () => {
                     </a>
                 </Link>
             </li>
+
             <li className="nav-item">
               <Link href="/about">
                 <a className="nav-link">
@@ -27,6 +29,16 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link href="/projects">
+                <a className="nav-link">
+                  <FontAwesomeIcon className="fa-icon" icon="code" fixedWidth/>
+                  <span className="link-text">Projects</span>
+                </a>
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link href="/about">
                 <a className="nav-link">
@@ -35,6 +47,7 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
+
           </ul>
         </nav>
       </div>
