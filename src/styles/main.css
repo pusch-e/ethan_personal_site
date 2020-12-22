@@ -1,0 +1,32 @@
+:root {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+.main {
+    margin-top: 4rem;
+}
+
+.navbar {
+    top: 0;
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    background: #1e1e24;
+}
