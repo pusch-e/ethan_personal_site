@@ -1,24 +1,12 @@
 import React from "react"
 import Link from "next/link"
+import Navbar from "../components/navbar"
 //import "../styles/main.css"
 
 const Home = () => {
   return (
     <div>
-      <div>
-        <nav className="navbar">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link href="/about">
-                <a className="nav-link">
-                  
-                  <span className="link-text">About</span>
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Navbar/>
 
       <div className="main">
         <h1> Ethan Home</h1>
