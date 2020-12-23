@@ -64,7 +64,7 @@ const Navbar = () => {
               </Link>
             </li>
             
-            <li className="nav-item">
+            <li className="nav-item" id="nav-item-external-links">
               <div className="external-links">
                 <Link href="https://github.com/pusch-e">
                   <a className="external-link" target="_blank" rel="noopener noreferrer">
