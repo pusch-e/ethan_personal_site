@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Open Sans';
     --text-primary: #b6b6b6;
     --text-secondary: #a3eeea;
@@ -20,7 +20,7 @@ h1{
 }
 
 body::-webkit-scrollbar {
-    width: .5rem;
+    width: .3rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -32,13 +32,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
 }
 
 .navbar {
     top: 0;
     width: 100vw;
-    height: 4rem;
+    height: 3.5rem;
     position: fixed;
     background: #1e1e24;
     transition: height 250ms ease;
@@ -65,22 +65,18 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 8rem;
+    width: 7rem;
+    height: 100%;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: 550ms;
 }
 
-#nav-link-pic {
-    margin-top: .25rem;
-}
-
-.nav-item:hover{
-    background: #141418;
+.nav-item:hover {
+    background: var(--background-secondary);
 }
 
 .nav-link:hover{ 
@@ -89,16 +85,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fa-icon {
-    width: 1.5rem;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
-    margin-top: .5rem;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    height: 1.75rem;
+    min-height: 1.75rem;
     color: var(--text-secondary);
-}
-
-.link-text {
-    margin: .25rem 1rem 0rem;
+    transition: ease-in, 500ms;
 }
 
 .navbar:hover .link-text {
@@ -116,33 +108,20 @@ body::-webkit-scrollbar-thumb {
     background: #141418;
 }
 
-.nav-name-link {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+#nav-name-link {
     text-decoration: none;
-    color: var(--text-primary);
+    width: 20rem;
     transition: 600ms;
 }
 
-.nav-name-link:hover{ 
-    filter: grayscale(0%) opacity(1);
-    color: var(--text-secondary);
-}
-
 .name-text {
-    margin: .65rem 1.7rem;
-    min-width: 15.5rem;
-    width: 15.5rem;
+    margin: 0rem 1.7rem;
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
-    height: 100%;
-    display: block;
 }
 
 .self-picture {
-    margin-top: 1rem;
     transform: rotate(0deg);
     transition: ease, 900ms;
 }
@@ -153,12 +132,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .external-links {
-    margin-top: .65rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
     margin-right: 2rem;
 }
 
 .external-link {
     margin-left: 1rem;
+    align-items: center;
+}
+
+.fa-icon-external {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    color: var(--text-secondary);
+    transition: ease-in, 500ms;
 }
 
 #nav-item-external-links:hover{
