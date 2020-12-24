@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-item {
     height: 100%;
+    transition: 200ms;
 }
 
 .nav-item:last-child {
@@ -77,6 +78,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-item:hover {
     background: var(--background-secondary);
+    transition: 100ms;
 }
 
 .nav-link:hover{ 
@@ -141,6 +143,7 @@ body::-webkit-scrollbar-thumb {
 .external-link {
     margin-left: 1rem;
     align-items: center;
+    transition: 300ms;
 }
 
 .fa-icon-external {
@@ -149,9 +152,14 @@ body::-webkit-scrollbar-thumb {
     height: 1.5rem;
     min-height: 1.5rem;
     color: var(--text-secondary);
-    transition: ease-in, 500ms;
+    transition: ease-in, 300ms;
 }
 
 #nav-item-external-links:hover{
     background: #1e1e24;
+}
+
+.external-link:hover {
+    filter: grayscale(100%) opacity(0.7);
+    transition: 300ms;
 }
