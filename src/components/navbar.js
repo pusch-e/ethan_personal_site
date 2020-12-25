@@ -8,7 +8,7 @@ import Image from "next/image"
 
 library.add(faAddressCard, faFile, faBriefcase, faCode, faEnvelope, fab)
 
-const Navbar = () => {
+const Navbar = ({pageName}) => {
 
     const [toggleHoverAbout, setToggleHoverAbout] = useState(false);
     const [toggleHoverExp, setToggleHoverExp] = useState(false);
@@ -68,13 +68,13 @@ const Navbar = () => {
 
                     <li className="nav-item">
                         <div className="nav-link">
-                            <Image src="/emanemotemed.png" width={50} height={50} className="self-picture"/>
+                            <Image src="/emanemotemed.png" width={48} height={48} className="self-picture"/>
                         </div>
                     </li>
 
                     <li className="nav-name-item">
                         <Link href="/home">
-                            <a className="nav-link" id="nav-name-link">
+                            <a className={`nav-link ${pageName === "Home" ? "nav-link-selected" : ""}`} id="nav-name-link">
                                 <span className="name-text"> Ethan Pusch </span>
                             </a>
                         </Link>
@@ -86,11 +86,11 @@ const Navbar = () => {
                              onMouseEnter={() => pageNavItem.setHover(true)}
                              onMouseLeave={() => pageNavItem.setHover(false)}>
                                 <Link href={`${pageNavItem.linkTo}`}>
-                                    <a className="nav-link">
+                                    <a className={`nav-link ${pageName === pageNavItem.linkText ? "nav-link-selected" : ""}`}>
                                         { pageNavItem.isHover ?
                                         <FontAwesomeIcon className="fa-icon" icon={pageNavItem.icon} fixedWidth/>
                                         :
-                                        <span className="link-text">{pageNavItem.linkText}</span>
+                                        <span className="link-text"> {pageNavItem.linkText} </span>
                                         }
                                     </a>
                                 </Link>

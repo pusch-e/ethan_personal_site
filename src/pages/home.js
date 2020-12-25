@@ -4,9 +4,14 @@ import Navbar from "../components/navbar"
 //import "../styles/main.css"
 
 const Home = () => {
+
+  const pageInfo = {
+    pageName: "Home"
+  }
+
   return (
     <div>
-      <Navbar/>
+      <Navbar pageName={pageInfo.pageName}/>
 
       <div className="main">
         <h1> Ethan Home</h1>

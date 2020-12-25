@@ -32,13 +32,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
 }
 
 .navbar {
     top: 0;
     width: 100vw;
-    height: 3.5rem;
+    height: 3rem;
     position: fixed;
     background: #1e1e24;
     transition: height 250ms ease;
@@ -51,11 +51,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
     width: 100vw;
 }
 
 .nav-item {
+    display: flex;
+    align-items: center;
     height: 100%;
     transition: 200ms;
 }
@@ -78,7 +81,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-item:hover {
     background: var(--background-secondary);
-    transition: 100ms;
+    transition: 200ms;
 }
 
 .nav-link:hover{ 
@@ -99,6 +102,12 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
+.nav-link-selected {
+    background: var(--background-secondary);
+    filter: grayscale(0%) opacity(1);
+    color: var(--text-secondary);
+}
+
 .nav-name-item {
     background: #1e1e24;
     letter-spacing: 0.2ch;
@@ -117,32 +126,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 .name-text {
-    margin: 0rem 1.7rem;
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
 .self-picture {
-    transform: rotate(0deg);
     transition: ease, 900ms;
 }
 
 .navbar:hover .self-picture{
-    transform: rotate(360deg);
+    transform: scale(1.25);
     transition: ease, 900ms;
 }
 
 .external-links {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
     margin-right: 2rem;
 }
 
 .external-link {
     margin-left: 1rem;
-    align-items: center;
     transition: 300ms;
 }
 

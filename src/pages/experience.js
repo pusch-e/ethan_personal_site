@@ -3,9 +3,14 @@ import Link from "next/link"
 import Navbar from "../components/navbar"
 
 const Experience = () => {
+
+    const pageInfo = {
+        pageName: "Experience"
+    }
+
     return (
         <div>
-            <Navbar/>
+            <Navbar pageName={pageInfo.pageName}/>
 
             <div className="main">
                 <h1> Experience </h1>
