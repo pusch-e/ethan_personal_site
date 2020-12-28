@@ -2,11 +2,11 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faAddressCard, faFile, faBriefcase, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faFileAlt, faBriefcase, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
 
-library.add(faAddressCard, faFile, faBriefcase, faCode, faEnvelope, fab)
+library.add(faAddressCard, faFileAlt, faBriefcase, faCode, faEnvelope, fab)
 
 const Navbar = ({pageName}) => {
 
@@ -41,7 +41,7 @@ const Navbar = ({pageName}) => {
             setHover: setToggleHoverRes,
             isHover: toggleHoverRes,
             linkTo: "/about",
-            icon: "file",
+            icon: "file-alt",
             linkText: "Resume"
         }
     ]

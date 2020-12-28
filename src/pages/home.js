@@ -10,36 +10,26 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="main-home">
       <Navbar pageName={pageInfo.pageName}/>
 
-      <div className="main">
-        <h1> Ethan Home</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
-        <h1>HELLO</h1>
+      <div className="home-container">
+        <div className="fade-in-bottom-fast">
+          <h1 className="large-text"> Hello! </h1>
+        </div>
+
+        <div className="fade-in-bottom">
+          <h1> My name is <span className="highlight">Ethan Pusch</span>.</h1>
+        </div>
+        
+        <div className="fade-in-bottom-slow">
+          <h2>
+            I am a third year student at Northeastern University majoring in Computer Science,
+            and I am looking for internship opportunities. Explore this website and reach out if you want to chat!
+          </h2>
+        </div>
       </div>
+
     </div>
   );
 }
