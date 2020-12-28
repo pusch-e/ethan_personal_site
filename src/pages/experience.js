@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import Navbar from "../components/navbar"
 
 const Experience = () => {
@@ -22,13 +23,22 @@ const Experience = () => {
 
             <div className="experience-container fade-in">
                 <div className="experience-item">
-                    <h2> Software Engineer Co-op </h2>
-                    <Link href="https://www.lenels2.com/">
-                        <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
-                            <h3 className="light-blue"> LenelS2 </h3>
-                        </a>
-                    </Link>
-                    <h4> January - June 2020 </h4>
+
+                    <div className="experience-header">
+                        <div className="experience-header-item">
+                            <h2> Software Engineer Co-op </h2>
+                            <Link href="https://www.lenels2.com/">
+                                <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
+                                    <h3 className="light-blue"> LenelS2 </h3>
+                                </a>
+                            </Link>
+                            <h4> January - June 2020 </h4>
+                        </div>
+                        <div className="experience-header-item">
+                            <Image src="/lenels2_logo.png" width={210} height={40}/>
+                        </div>
+                    </div>
+
                     <p className="experience-item-description"> 
                         While at LenelS2, I worked as a part of their Video Management System (VMS) team. I contributed
                         to their flagship video system product, the VRx. Upon joining, I was eager to contribute to VRx's
@@ -44,6 +54,7 @@ const Experience = () => {
                         important debugging information from the new data pipeline that LenelS2 was implementing. I am grateful 
                         for my experience at LenelS2 and look forward to continuing to grow as a software engineer!
                     </p>
+
                     <div className="tech-stack-list">
                         {
                             lenelS2TechStack.map( (tech, i) =>
@@ -56,13 +67,21 @@ const Experience = () => {
                 </div>
                 
                 <div className="experience-item">
-                    <h2> Front End Intern </h2>
-                    <Link href="https://www.xogene.com/">
-                        <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
-                            <h3 className="light-blue"> Xogene Services LLC </h3>
-                        </a>
-                    </Link>
-                    <h4> June - August 2017 and 2018 </h4>
+
+                    <div className="experience-header">
+                        <div className="experience-header-item">
+                            <h2> Front End Intern </h2>
+                            <Link href="https://www.xogene.com/">
+                                <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
+                                    <h3 className="light-blue"> Xogene Services LLC </h3>
+                                </a>
+                            </Link>
+                            <h4> June - August 2017 and 2018 </h4>
+                        </div>
+                        <div className="experience-header-item">
+                            <Image src="/xogene_logo_cropped.png" width={200} height={40}/>
+                        </div>
+                    </div>
                     <p className="experience-item-description"> 
                         My internships at Xogene allowed me to get my feet wet in the world of software engineering, as this was my first
                         time working in an agile team development environment. I was still in highschool during this experience, so this
@@ -86,13 +105,21 @@ const Experience = () => {
                 </div>
 
                 <div className="experience-item">
-                    <h2> Junior Java Teacher </h2>
-                    <Link href="https://www.summertech.net/">
-                        <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
-                            <h3 className="light-blue"> SummerTech </h3>
-                        </a>
-                    </Link>
-                    <h4> June - August 2016 </h4>
+
+                    <div className="experience-header">
+                        <div className="experience-header-item">
+                            <h2> Junior Java Teacher </h2>
+                            <Link href="https://www.summertech.net/">
+                                <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
+                                    <h3 className="light-blue"> SummerTech </h3>
+                                </a>
+                            </Link>
+                            <h4> June - August 2016 </h4>
+                        </div>
+                        <div className="experience-header-item">
+                            <Image src="/summertech_logo.png" width={160} height={75}/>
+                        </div>
+                    </div>
                     <p className="experience-item-description"> 
                         This is one of the most fun work experiences that I have had. SummerTech is a summer camp that I used to attend,
                         and it was here where I initally learned how to code. I chose to learn Java as my first language because it was 
