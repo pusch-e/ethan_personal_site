@@ -117,7 +117,7 @@ const Experience = () => {
                             <h4> June - August 2016 </h4>
                         </div>
                         <div className="experience-header-item">
-                            <Image src="/summertech_logo.png" width={160} height={75}/>
+                            <Image src="/summertech_logo.png" width={150} height={75}/>
                         </div>
                     </div>
                     <p className="experience-item-description"> 

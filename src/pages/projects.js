@@ -20,12 +20,18 @@ const Projects = () => {
             <div className="projects-container fade-in">
 
                 <div className="project-item">
-                    <h2> Videogame Database </h2>
+                    <h2> Video Game Database </h2>
                     <p> 2020 </p>
+
+                    <div className="project-item-text">
+                        <Image src="/video_game_database_preview.gif" width={580} height={300}/>
+                    </div>
+
                     <p className="project-item-text"> 
                         A front end interface that allows the user to perform CRUD operations 
                         to alter domain objects in a MySQL database. Users have varying roles
-                        that restrict which users can CRUD which objects.
+                        that restrict which users can CRUD which objects. (Code available from 
+                        private repository upon request)
                     </p>
                     <div className="tech-stack-list">
                         {
