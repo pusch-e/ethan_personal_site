@@ -40,7 +40,7 @@ const Navbar = ({pageName}) => {
         {
             setHover: setToggleHoverRes,
             isHover: toggleHoverRes,
-            linkTo: "/about",
+            linkTo: "http://localhost:3000/resume.pdf",
             icon: "file-alt",
             linkText: "Resume"
         }

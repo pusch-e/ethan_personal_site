@@ -15,17 +15,13 @@ const Home = () => {
 
       <div className="home-container">
         <div className="fade-in-bottom-fast">
-          <h1 className="large-text"> Hello! </h1>
-        </div>
-
-        <div className="fade-in-bottom">
-          <h1> My name is <span className="highlight">Ethan Pusch</span>.</h1>
+          <h1 className="large-text"> Hello! I'm <span className="light-blue">Ethan Pusch</span>. </h1>
         </div>
         
-        <div className="fade-in-bottom-slow">
+        <div className="fade-in-bottom">
           <h2>
-            I am a third year student at Northeastern University majoring in Computer Science,
-            and I am looking for internship opportunities. Explore this website and reach out if you want to chat!
+            I am a third year at Northeastern University pursuing a major in Computer Science and a minor in Business.
+            I believe that there is a solution for every problem.
           </h2>
         </div>
       </div>

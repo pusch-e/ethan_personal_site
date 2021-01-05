@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
     font-size: 18px;
-    font-family: 'Open Sans';
+    /*font-family: 'Open Sans';*/
+    font-family: 'Montserrat';
     --body-text-primiary: #e1e1e7;
     --text-primary: #b6b6b6;
     --text-secondary: #a3eeea;
@@ -204,10 +207,10 @@ html {
 }
 
 .fa-icon {
-    width: 1.75rem;
-    min-width: 1.75rem;
-    height: 1.75rem;
-    min-height: 1.75rem;
+    width: 1.63rem;
+    min-width: 1.63rem;
+    height: 1.63rem;
+    min-height: 1.63rem;
     color: var(--text-secondary);
     transition: ease-in, 500ms;
 }
@@ -255,19 +258,19 @@ html {
 }
 
 .external-links {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .external-link {
-    margin-left: 1rem;
+    margin-left: .75rem;
     transition: 300ms;
 }
 
 .fa-icon-external {
-    width: 1.5rem;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    min-height: 1.25rem;
     color: var(--text-secondary);
     transition: ease-in, 300ms;
 }
