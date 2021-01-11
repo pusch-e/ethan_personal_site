@@ -86,7 +86,9 @@ const Navbar = ({pageName}) => {
                              onMouseEnter={() => pageNavItem.setHover(true)}
                              onMouseLeave={() => pageNavItem.setHover(false)}>
                                 <Link href={`${pageNavItem.linkTo}`}>
-                                    <a className={`nav-link ${pageName === pageNavItem.linkText ? "nav-link-selected" : ""}`}>
+                                    <a className={`nav-link ${pageName === pageNavItem.linkText ? "nav-link-selected" : ""}`} 
+                                     target={pageNavItem.linkText === "Resume" ? "_blank" : ""} 
+                                     rel={pageNavItem.linkText === "Resume" ? "noopener noreferrer" : ""}>
                                         { pageNavItem.isHover ?
                                         <FontAwesomeIcon className="fa-icon" icon={pageNavItem.icon} fixedWidth/>
                                         :

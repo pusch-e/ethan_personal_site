@@ -21,9 +21,13 @@ const Experience = () => {
         <div>
             <Navbar pageName={pageInfo.pageName}/>
 
-            <div className="experience-container fade-in">
-                <div className="experience-item">
+            <div className="header fade-in-top">
+                <h1 className="light-blue">Work Experience</h1>
+            </div>
 
+            <div className="experience-container fade-in">
+
+                <div className="experience-item">
                     <div className="experience-header">
                         <div className="experience-header-item">
                             <h2> Software Engineer Co-op </h2>
@@ -67,7 +71,6 @@ const Experience = () => {
                 </div>
                 
                 <div className="experience-item">
-
                     <div className="experience-header">
                         <div className="experience-header-item">
                             <h2> Front End Intern </h2>
@@ -105,7 +108,6 @@ const Experience = () => {
                 </div>
 
                 <div className="experience-item">
-
                     <div className="experience-header">
                         <div className="experience-header-item">
                             <h2> Junior Java Teacher </h2>
@@ -137,10 +139,6 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-           
-            {/*<div className="main">
-                <h1> Experience </h1>
-            </div>*/}
         </div>
     );
 }

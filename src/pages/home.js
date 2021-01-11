@@ -11,8 +11,11 @@ const Home = () => {
 
   return (
     <div className="main-home">
-      <Navbar pageName={pageInfo.pageName}/>
-
+      
+      <div className="fade-in-slow">
+        <Navbar pageName={pageInfo.pageName}/>
+      </div>
+      
       <div className="home-container">
         <div className="fade-in-bottom-fast">
           <h1 className="large-text"> Hello! I'm <span className="light-blue">Ethan Pusch</span>. </h1>
@@ -20,8 +23,12 @@ const Home = () => {
         
         <div className="fade-in-bottom">
           <h2>
-            I am a third year at Northeastern University pursuing a major in Computer Science and a minor in Business.
-            I believe that there is a solution for every problem.
+            I'm a third-year student at <span className="light-blue">Northeastern University</span> pursuing a major in Computer Science and a minor in Business Administration.
+            <br />
+            <br />
+            <div className="fade-in-bottom-slow">
+              I'm passionate about developing <span className="light-blue">creative</span> and <span className="light-blue">impactful</span> solutions.
+            </div>
           </h2>
         </div>
       </div>

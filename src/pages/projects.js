@@ -17,6 +17,10 @@ const Projects = () => {
         <div className="main-projects">
             <Navbar pageName={pageInfo.pageName}/>
 
+            <div className="header fade-in-top">
+                <h1 className="light-blue">Projects</h1>
+            </div>
+
             <div className="projects-container fade-in">
 
                 <div className="project-item">

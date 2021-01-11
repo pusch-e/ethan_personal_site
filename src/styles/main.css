@@ -57,6 +57,33 @@ html {
     height: 100%;
 }
 
+.header {
+    position: absolute;
+    top: 11.5%;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 2.15rem;
+    overflow: hidden;
+}
+
+.header h1::after {
+    background-color: var(--text-secondary);
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    left: 0.5em;
+    margin-right: -50%;
+}
+
 .main-home {
     height: 100vh;
     display: flex;
@@ -67,6 +94,7 @@ html {
 
 .home-container {
     margin: 0 12.5%;
+    text-align: left;
 }
 
 .main-home h1 {
@@ -84,7 +112,7 @@ html {
     position: absolute;
     left: 12.5%;
     right: 12.5%;
-    top: 12.5%;
+    top: 23%;
 }
 
 .experience-item {
@@ -122,19 +150,23 @@ html {
 
 .projects-container {
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 9rem;
     max-width: 600px;
     padding: 20px;
 }
 
 .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: var(--background-secondary);
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
     border-color: var(--text-secondary);
     padding: 20px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     transition: .3s;
 }
 
@@ -284,20 +316,28 @@ html {
     transition: 300ms;
 }
 
-.fade-in-bottom-fast {
-    animation: fadeInBottom ease-in .5s;
-    -webkit-animation: fadeInBottom ease-in .5s;
-    -moz-animation: fadeInBottom ease-in .5s;
-    -o-animation: fadeInBottom ease-in .5s;
-    -ms-animation: fadeInBottom ease-in .5s;
-}
-
 .fade-in {
     animation: fadeIn ease-in 1s;
     -webkit-animation: fadeIn ease-in 1s;
     -moz-animation: fadeIn ease-in 1s;
     -o-animation: fadeIn ease-in 1s;
     -ms-animation: fadeIn ease-in 1s;
+}
+
+.fade-in-slow {
+    animation: fadeIn ease-in 1.25s 3s both;
+    -webkit-animation: fadeIn ease-in 1.25s 3s both;
+    -moz-animation: fadeIn ease-in 1.25s 3s both;
+    -o-animation: fadeIn ease-in 1.25s 3s both;
+    -ms-animation: fadeIn ease-in 1.25s 3s both;
+}
+
+.fade-in-bottom-fast {
+    animation: fadeInBottom ease-in .5s;
+    -webkit-animation: fadeInBottom ease-in .5s;
+    -moz-animation: fadeInBottom ease-in .5s;
+    -o-animation: fadeInBottom ease-in .5s;
+    -ms-animation: fadeInBottom ease-in .5s;
 }
 
 .fade-in-bottom {
@@ -309,11 +349,19 @@ html {
 }
 
 .fade-in-bottom-slow {
-    animation: fadeInBottom ease-in .5s 2.15s both;
-    -webkit-animation: fadeInBottom ease-in .5s 2.15s both;
-    -moz-animation: fadeInBottom ease-in .5s 2.15s both;
-    -o-animation: fadeInBottom ease-in .5s 2.15s both;
-    -ms-animation: fadeInBottom ease-in .5s 2.15s both;
+    animation: fadeInBottom ease-in .5s 2.25s both;
+    -webkit-animation: fadeInBottom ease-in .5s 2.25s both;
+    -moz-animation: fadeInBottom ease-in .5s 2.25s both;
+    -o-animation: fadeInBottom ease-in .5s 2.25s both;
+    -ms-animation: fadeInBottom ease-in .5s 2.25s both;
+}
+
+.fade-in-top {
+    animation: fadeInTop ease-in .6s;
+    -webkit-animation: fadeInTop ease-in .6s;
+    -moz-animation: fadeInTop ease-in .6s;
+    -o-animation: fadeInTop ease-in .6s;
+    -ms-animation: fadeInTop ease-in .6s;
 }
 
 @keyframes fadeIn {
@@ -382,6 +430,46 @@ html {
     100% { opacity:1; }
 }
 
+
+@keyframes fadeInTop {
+    0% { 
+        opacity:0;
+        transform: translateY(-100%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-moz-keyframes fadeInTop {
+    0% { 
+        opacity:0;
+        transform: translateY(-100%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-webkit-keyframes fadeInTop {
+    0% { 
+        opacity:0;
+        transform: translateY(-100%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-o-keyframes fadeInTop {
+    0% { 
+        opacity:0;
+        transform: translateY(-100%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-ms-keyframes fadeInTop {
+    0% { 
+        opacity:0;
+        transform: translateY(-100%); 
+    }
+    100% { opacity:1; }
+}
 .highlight {
     background: linear-gradient(
         180deg,
