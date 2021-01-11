@@ -73,7 +73,7 @@ const Navbar = ({pageName}) => {
                     </li>
 
                     <li className="nav-name-item">
-                        <Link href="/home">
+                        <Link href="/">
                             <a className={`nav-link ${pageName === "Home" ? "nav-link-selected" : ""}`} id="nav-name-link">
                                 <span className="name-text"> Ethan Pusch </span>
                             </a>
