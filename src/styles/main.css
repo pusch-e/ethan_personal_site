@@ -116,7 +116,7 @@ html {
 }
 
 .experience-item {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
 }
 
 .experience-header {
@@ -341,11 +341,11 @@ html {
 }
 
 .fade-in-bottom {
-    animation: fadeInBottom ease-in .5s 1s both;
-    -webkit-animation: fadeInBottom ease-in .5s 1s both;
-    -moz-animation: fadeInBottom ease-in .5s 1s both;
-    -o-animation: fadeInBottom ease-in .5s 1s both;
-    -ms-animation: fadeInBottom ease-in .5s 1s both;
+    animation: fadeInBottom ease-in .7s 1s both;
+    -webkit-animation: fadeInBottom ease-in .7s 1s both;
+    -moz-animation: fadeInBottom ease-in .7s 1s both;
+    -o-animation: fadeInBottom ease-in .7s 1s both;
+    -ms-animation: fadeInBottom ease-in .7s 1s both;
 }
 
 .fade-in-bottom-slow {
