@@ -6,7 +6,7 @@
     font-size: 18px;
     /*font-family: 'Open Sans';*/
     font-family: 'Montserrat';
-    --body-text-primiary: #e1e1e7;
+    --body-text-primary: #e1e1e7;
     --text-primary: #b6b6b6;
     --text-secondary: #a3eeea;
     --background-primary: #1e1e24; 
@@ -36,7 +36,7 @@ body {
 }
 
 h1, h2, h3, h4, p {
-    color: var(--body-text-primiary);
+    color: var(--body-text-primary);
     margin: 0;
 }
 
@@ -101,6 +101,28 @@ html {
     margin-bottom: 2rem;
 }
 
+.about-container {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 23%;
+}
+
+.about-pic {
+    display: inline;
+    float: right;
+    margin-left: 2rem;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: var(--text-secondary);
+}
+
+.about-pic:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--body-text-primary);
+}
+
 .main-projects {
     display: flex;
     flex-direction: column;
@@ -117,6 +139,11 @@ html {
 
 .experience-item {
     margin-bottom: 4.5rem;
+}
+
+.experience-logo:hover {
+    transform: scale(1.04);
+    border-color: var(--text-secondary);
 }
 
 .experience-header {
@@ -364,6 +391,14 @@ html {
     -ms-animation: fadeInTop ease-in .6s;
 }
 
+.fade-in-from-right {
+    animation: fadeInFromRight ease-out .6s;
+    -webkit-animation: fadeInFromRight ease-out .6s;
+    -moz-animation: fadeInFromRight ease-out .6s;
+    -o-animation: fadeInFromRight ease-out .6s;
+    -ms-animation: fadeInFromRight ease-out .6s;
+}
+
 @keyframes fadeIn {
     0% { opacity:0; }
     100% { opacity:1; }
@@ -470,6 +505,47 @@ html {
     }
     100% { opacity:1; }
 }
+
+@keyframes fadeInFromRight {
+    0% { 
+        opacity:0;
+        transform: translateX(50%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-moz-keyframes fadeInFromRight {
+    0% { 
+        opacity:0;
+        transform: translateX(50%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-webkit-keyframes fadeInFromRight {
+    0% { 
+        opacity:0;
+        transform: translateX(50%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-o-keyframes fadeInFromRight {
+    0% { 
+        opacity:0;
+        transform: translateX(50%); 
+    }
+    100% { opacity:1; }
+}
+  
+@-ms-keyframes fadeInFromRight {
+    0% { 
+        opacity:0;
+        transform: translateX(50%); 
+    }
+    100% { opacity:1; }
+}
+
 .highlight {
     background: linear-gradient(
         180deg,

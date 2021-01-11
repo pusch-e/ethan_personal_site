@@ -38,7 +38,7 @@ const Experience = () => {
                             </Link>
                             <h4> January - June 2020 </h4>
                         </div>
-                        <div className="experience-header-item">
+                        <div className="experience-header-item experience-logo">
                             <Link href="https://www.lenels2.com/">
                                 <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
                                     <Image src="/lenels2_logo.png" width={220} height={40}/>
@@ -91,7 +91,7 @@ const Experience = () => {
                             </Link>
                             <h4> June - August 2017 and 2018 </h4>
                         </div>
-                        <div className="experience-header-item">
+                        <div className="experience-header-item experience-logo">
                             <Link href="https://www.xogene.com/">
                                 <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
                                     <Image src="/xogene_logo_cropped.png" width={210} height={40}/>
@@ -134,7 +134,7 @@ const Experience = () => {
                             </Link>
                             <h4> June - August 2016 </h4>
                         </div>
-                        <div className="experience-header-item">
+                        <div className="experience-header-item experience-logo">
                             <Link href="https://www.summertech.net/">
                                 <a className="no-decoration-link" target="_blank" rel="noopener noreferrer">
                                     <Image src="/summertech_logo.png" width={150} height={75}/>

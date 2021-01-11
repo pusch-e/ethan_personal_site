@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Navbar from "../components/navbar"
+import Image from "next/image"
 
 const About = () => {
     
@@ -16,8 +17,12 @@ const About = () => {
                 <h1 className="light-blue">About</h1>
             </div>
 
-            <div className= "experience-container fade-in">
+            <div className= "about-container fade-in">
                 <h4>
+                    <div className="about-pic fade-in-from-right">
+                        <Image className="about-pic" src="/ethan_side_pic.jpeg" width={300} height={467}/>
+                    </div>
+
                     Hello! I'm 
                     <span className="light-blue"> Ethan Pusch</span>,
                     an aspiring software engineer and third-year student at 
@@ -40,12 +45,16 @@ const About = () => {
                     <br/> <br/>
                     Northeastern made me realize that I have so much yet to learn in this ever expanding field. Although it was
                     initially daunting, I dove in head first to the new technologies that I had not yet explored and my passion 
-                    for creating through code only continued to grow. When I am not debugging, you can find me at a field near by
-                    throwing a frisbee or practicing with my teammates on the Ultimate Frisbee team.
+                    for creating through code only continued to grow. When I am not debugging, you can find me at a nearby field
+                    practicing with my 
+                    <span className="light-blue"> Ultimate Frisbee </span> 
+                    teammates or 
+                    <span className="light-blue"> blue biking </span> 
+                    around the city.
                     <br/> <br/>
-                    Feel free to explore this website to see my recent projects
-                    and past work experiences. If you want to chat, do not hesitate to reach out!
+                    Feel free to explore this website to see my recent projects and past work experiences, and reach out if you want to chat!
                 </h4>
+
             </div>
         </div>
     );
