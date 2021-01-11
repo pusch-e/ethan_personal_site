@@ -60,7 +60,7 @@ const Experience = () => {
                         After self-teaching REST commands
                         to interact with their APIs and daemons, I developed a variety of test platforms in Python, C#, and Bash. 
                         These utilities were used in order to support back-end features of the VRx. Despite the disruption that
-                        the Covid-19 virus caused halfway through my co-op experience, I continued to work dilligently even after
+                        the Covid-19 virus caused halfway through my co-op experience, I continued to work dilligently after
                         transitioning to working remotely. While remote, I examined a threading issue that was affecting the performance
                         of a daemon related to camera analytics. I also created a logging function in C++ in order to output 
                         important debugging information from the new data pipeline that LenelS2 was implementing.
@@ -144,17 +144,17 @@ const Experience = () => {
                     </div>
                     <p className="experience-item-description"> 
                         This is one of the most fun work experiences that I have had. SummerTech is a summer camp that I used to attend,
-                        and it was here where I initally learned how to code. 
+                        and it was where I initally learned how to code. 
                         <br/> <br/>
-                        I chose to learn Java as my first language because it was 
-                        the most popular course while I was attending. Once I was old enough, I applied to become a teacher.
+                        I chose to learn Java as my first language because it had 
+                        the most popular course. Once I was old enough, I applied to become a teacher.
                         With all of the Java experience that I had under my belt from attending the camp for years, I was offered my first 
                         job as a junior Java teacher. Over the course of 5 weeks, I was given 2-4 students to teach each week. Each 
                         student had varying levels of experience with coding, and I had to assign projects based on their
                         respective proficiencies with Java. 
                         <br/> <br/>
                         Outside of class, I was a counselour who was tasked with other duties
-                        related to ensuring entertainment and safety for the students in their extra cirricular activites while at SummerTech.
+                        related to ensuring entertainment and safety for the students in their extracirricular activites while at SummerTech.
                     </p>
                     <div className="tech-stack-list">
                         <div className="tech-stack-item">

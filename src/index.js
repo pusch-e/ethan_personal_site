@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/home';
+import Head from 'next/head'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Ethan Pusch Home</title>
+      </Head>
+      <Home />
+    </div>
+  )
+}
 
