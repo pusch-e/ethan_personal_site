@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Home from './pages/home';
+import Landing from './home';
 import Head from 'next/head'
 
 export default function Home() {
@@ -10,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Ethan Pusch Home</title>
       </Head>
-      <Home />
+      <Landing />
     </div>
   )
 }

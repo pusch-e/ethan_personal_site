@@ -3,7 +3,7 @@ import Link from "next/link"
 import Navbar from "../components/navbar"
 //import "../styles/main.css"
 
-const Home = () => {
+const Landing = () => {
 
   const pageInfo = {
     pageName: "Home"
@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="main-home">
-      
+
       <div className="fade-in-slow">
         <Navbar pageName={pageInfo.pageName}/>
       </div>
@@ -37,4 +37,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Landing;
