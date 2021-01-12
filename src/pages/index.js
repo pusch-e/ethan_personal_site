@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ethan Pusch Home</title>
+        <title>Ethan Pusch | Home</title>
       </Head>
       <Landing />
     </div>

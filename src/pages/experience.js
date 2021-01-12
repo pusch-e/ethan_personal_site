@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 import Navbar from "../components/navbar"
 
 const Experience = () => {
@@ -19,6 +20,10 @@ const Experience = () => {
 
     return (
         <div>
+            <Head>
+                <title>Ethan Pusch | Experience</title>
+            </Head>
+
             <Navbar pageName={pageInfo.pageName}/>
 
             <div className="header fade-in-top">

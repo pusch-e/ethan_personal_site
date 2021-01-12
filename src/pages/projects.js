@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 import Navbar from "../components/navbar"
 
 const Projects = () => {
@@ -15,6 +16,10 @@ const Projects = () => {
 
     return (
         <div className="main-projects">
+            <Head>
+                <title>Ethan Pusch | Projects</title>
+            </Head>
+
             <Navbar pageName={pageInfo.pageName}/>
 
             <div className="header fade-in-top">

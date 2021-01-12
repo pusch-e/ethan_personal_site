@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "next/link"
+import Head from "next/head"
 import Navbar from "../components/navbar"
 import Image from "next/image"
 
@@ -11,6 +11,10 @@ const About = () => {
 
     return (
         <div>
+            <Head>
+                <title>Ethan Pusch | About</title>
+            </Head>
+
             <Navbar pageName={pageInfo.pageName}/>
 
             <div className="header fade-in-top">
@@ -27,7 +31,7 @@ const About = () => {
                     <span className="light-blue"> Ethan Pusch</span>,
                     an aspiring software engineer and third-year student at 
                     <span className="light-blue"> Northeastern University</span>.
-                    I'm currently based in Boston, MA, but I  grew up in the suburbs of Tappan, New York.  
+                    I'm currently based in Boston, MA, but I  grew up in the suburb of Tappan, New York.  
                     <br/> <br/>
                     I have always been captivated by the endless possibilites presented by coding and began learning Java
                     in middle school. It all started at 
