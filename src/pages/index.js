@@ -4,12 +4,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Ethan Pusch | Home</title>
-      </Head>
-      <Landing />
-    </div>
+    <Landing />
   )
 }
 
